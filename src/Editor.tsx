@@ -1,8 +1,11 @@
-import { Button } from "@mui/material";
 import StarterKit from "@tiptap/starter-kit";
 import {
     MenuButtonBold,
+    MenuButtonBulletedList,
     MenuButtonItalic,
+    MenuButtonOrderedList,
+    MenuButtonStrikethrough,
+    MenuButtonSubscript,
     MenuControlsContainer,
     MenuDivider,
     MenuSelectHeading,
@@ -31,6 +34,10 @@ export default function Editor() {
                         <MenuDivider />
                         <MenuButtonBold />
                         <MenuButtonItalic />
+                        <MenuButtonStrikethrough />
+                        <MenuButtonSubscript />
+                        <MenuButtonOrderedList />
+                        <MenuButtonBulletedList />
                         {/* Add more controls of your choosing here */}
                     </MenuControlsContainer>
                 )}
