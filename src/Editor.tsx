@@ -35,7 +35,7 @@ export default function Editor() {
                         <MenuButtonBold />
                         <MenuButtonItalic />
                         <MenuButtonStrikethrough />
-                        <MenuButtonSubscript />
+                        {/* <MenuButtonSubscript /> */}
                         <MenuButtonOrderedList />
                         <MenuButtonBulletedList />
                         {/* Add more controls of your choosing here */}
