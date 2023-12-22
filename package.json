@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cd build/static/js && mkdir ..\\..\\..\\php\\static\\js && copy main*.js ..\\..\\..\\php\\static\\js\\main.js && cd ../css && mkdir ..\\..\\..\\php\\static\\css && copy main*.css ..\\..\\..\\php\\static\\css\\main.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

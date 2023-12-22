@@ -49,8 +49,8 @@ $html=ob_get_clean();
 		}
 	</style>
 
-	<script defer="defer" src="/static/js/main.16ffb4fa.js"></script>
-	<link href="/static/css/main.1103077d.css" rel="stylesheet">
+	<script defer="defer" src="/static/js/main.js"></script>
+	<link href="/static/css/main.css" rel="stylesheet">
 </head>
 
 <body>
