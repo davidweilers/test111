@@ -28,12 +28,35 @@ $html=ob_get_clean();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<script defer="defer" src="/static/js/main.d7b9aa3c.js"></script>
+	<style>
+		.circleize {
+			font-size: 34px;
+			color: lightgray;
+		}
+
+		.circleize svg text {
+			fill: currentColor;
+		}
+
+		@keyframes spin {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		.circleize svg {
+			animation: spin 20s linear infinite;
+		}
+	</style>
+
+	<script defer="defer" src="/static/js/main.16ffb4fa.js"></script>
 	<link href="/static/css/main.1103077d.css" rel="stylesheet">
 </head>
 
 <body>
+	<div class="circleize">Simple CMS&nbsp;</div>
 	<div id="root"></div>
+	<script src="circleize.js"></script>
 </body>
 
 </html>

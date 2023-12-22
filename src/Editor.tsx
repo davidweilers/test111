@@ -5,7 +5,7 @@ import {
     MenuButtonItalic,
     MenuButtonOrderedList,
     MenuButtonStrikethrough,
-    MenuButtonSubscript,
+    MenuButtonUnderline,
     MenuControlsContainer,
     MenuDivider,
     MenuSelectHeading,
@@ -14,12 +14,13 @@ import {
 } from "mui-tiptap";
 import { useRef } from "react";
 import { sessionGet, sessionSet } from "./Page";
+import { Grid } from "@mui/material";
 
 export default function Editor() {
     const rteRef = useRef<RichTextEditorRef>(null);
 
     return (
-        <div>
+        <Grid item xs={12}>
             <RichTextEditor
                 ref={rteRef}
                 onUpdate={() => {
@@ -35,13 +36,13 @@ export default function Editor() {
                         <MenuButtonBold />
                         <MenuButtonItalic />
                         <MenuButtonStrikethrough />
-                        {/* <MenuButtonSubscript /> */}
+                        {/* <MenuButtonUnderline /> */}
+                        <MenuDivider />
                         <MenuButtonOrderedList />
                         <MenuButtonBulletedList />
-                        {/* Add more controls of your choosing here */}
                     </MenuControlsContainer>
                 )}
             />
-        </div>
+        </Grid>
     );
 }
