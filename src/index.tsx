@@ -8,6 +8,7 @@ import Dashboard from './Dashboard';
 import Root from './Outlet';
 import Sitemap from './Sitemap';
 import Settings from './Settings';
+import SitemapApp from './Sitemap';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/sitemap",
-        element: <Sitemap />
+        element: <SitemapApp />
       }
     ]
   }

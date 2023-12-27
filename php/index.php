@@ -9,9 +9,11 @@ spl_autoload_register(function ($class) {
 		require_once($fn);
 });
 
+header('Access-Control-Allow-Origin: *');
 // require_once 'vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD']!='GET') {
+	?>[{"id":1},{"id":2,"title":"test"}]<?php 
 	exit;
 }
 
